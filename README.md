@@ -22,6 +22,12 @@ _These examples are calculated using my real age. If the user were old enough to
 
 ## Technologies used
 
+* Atom
+* Javascript
+* Node.js
+* Jasmine
+* Karma
+
 
 ## Contact me
 
