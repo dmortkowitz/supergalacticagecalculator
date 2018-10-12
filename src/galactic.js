@@ -58,6 +58,16 @@ export class SolarAge {
     let jupiterRemaining = thisAge.jupiterYears(71) - thisAge.jupiterYears(age);
     return Math.round(jupiterRemaining);
   }
+  OverripeMercury(age) {
+    let thisAge = new SolarAge(age);
+    let mercuryYears = thisAge.mercuryYears;
+    let mercuryRemaining = thisAge.mercuryRemaining(71);
+    if (mercuryYears>mercuryRemaining) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
 
 }
