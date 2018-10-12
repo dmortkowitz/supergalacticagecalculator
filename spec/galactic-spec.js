@@ -66,8 +66,36 @@ describe('SolarAge', function() {
 });
 
 describe('SolarAge', function() {
-  it('should tell you if you are past due on mercury', function(){
+  it('should tell you if you are past due on Mercury', function(){
     let age = new SolarAge(33);
-    expect(age.OverripeMercury(33)).toEqual(false);
+    expect(age.overripeMercury(33)).toEqual(false);
+  });
+});
+
+describe('SolarAge', function() {
+  it('should tell you if you are past due on Venus', function(){
+    let age = new SolarAge(33);
+    expect(age.overripeVenus(33)).toEqual(false);
+  });
+});
+
+describe('SolarAge', function() {
+  it('should tell you if you are past due on Earth', function(){
+    let age = new SolarAge(33);
+    expect(age.overripeEarth(33)).toEqual(false);
+  });
+});
+
+describe('SolarAge', function() {
+  it('should tell you if you are past due on Mars', function(){
+    let age = new SolarAge(33);
+    expect(age.overripeMars(33)).toEqual(false);
+  });
+});
+
+describe('SolarAge', function() {
+  it('should tell you if you are past due on Jupiter', function(){
+    let age = new SolarAge(33);
+    expect(age.overripeJupiter(33)).toEqual(false);
   });
 });

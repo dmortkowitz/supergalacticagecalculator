@@ -47,7 +47,6 @@ export class SolarAge {
     return Math.round(earthRemaining);
   }
 
-
   marsRemaining(age) {
     let thisAge = new SolarAge(age);
     let marsRemaining = thisAge.marsYears(71) - thisAge.marsYears(age);
@@ -58,7 +57,8 @@ export class SolarAge {
     let jupiterRemaining = thisAge.jupiterYears(71) - thisAge.jupiterYears(age);
     return Math.round(jupiterRemaining);
   }
-  OverripeMercury(age) {
+
+  overripeMercury(age) {
     let thisAge = new SolarAge(age);
     let mercuryYears = thisAge.mercuryYears;
     let mercuryRemaining = thisAge.mercuryRemaining(71);
@@ -67,9 +67,50 @@ export class SolarAge {
     } else {
       return false;
     }
+
+  overripeVenus(age) {
+    let thisAge = new SolarAge(age);
+    let venusYears = thisAge.venusYears;
+    let venusRemaining = thisAge.venusRemaining(71);
+    if (venusYears>venusRemaining) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
+  overripeEarth(age) {
+    let thisAge = new SolarAge(age);
+    let earthAge = thisAge.earthAge;
+    let earthRemaining = thisAge.earthRemaining(71);
+    if (earthAge>earthRemaining) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
+  overripeMars(age) {
+    let thisAge = new SolarAge(age);
+    let marsYears = thisAge.marsYears;
+    let marsRemaining = thisAge.marsRemaining(71);
+    if (marsYears>marsRemaining) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  overripeJupiter(age) {
+    let thisAge = new SolarAge(age);
+    let jupiterYears = thisAge.jupiterYears;
+    let jupiterRemaining = thisAge.jupiterRemaining(71);
+    if (jupiterYears>jupiterRemaining) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
 
 export class EarthAge {
