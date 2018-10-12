@@ -1,3 +1,5 @@
+
+
 export class SolarAge {
   constructor(age) {
     this.age = age;
@@ -27,9 +29,38 @@ export class SolarAge {
     var jupiterYears = age / 11.86;
     return Math.round(jupiterYears);
   }
+
+  mercuryRemaining(age) {
+    let thisAge = new SolarAge(age);
+    let mercuryRemaining = thisAge.mercuryYears(71) - thisAge.mercuryYears(age);
+    return Math.round(mercuryRemaining);
+  }
+
+  venusRemaining(age) {
+    let thisAge = new SolarAge(age);
+    let venusRemaining = thisAge.venusYears(71) - thisAge.venusYears(age);
+    return Math.round(venusRemaining);
+  }
+
+  earthRemaining(age) {
+    let earthRemaining = 71 - age;
+    return Math.round(earthRemaining);
+  }
+
+
+  marsRemaining(age) {
+    let thisAge = new SolarAge(age);
+    let marsRemaining = thisAge.marsYears(71) - thisAge.marsYears(age);
+    return Math.round(marsRemaining);
+  }
+  jupiterRemaining(age) {
+    let thisAge = new SolarAge(age);
+    let jupiterRemaining = thisAge.jupiterYears(71) - thisAge.jupiterYears(age);
+    return Math.round(jupiterRemaining);
+  }
+
+
 }
-
-
 
 export class EarthAge {
   constructor(earthAge) {

@@ -15,15 +15,24 @@ _Calculator will use estimated solar years to calculate your local planetary age
 | David    | Mars    |  18         |  21            |    |  0              |
 | David    | Jupiter |  3          |  4             |    |  0              |
 ```
-_These examples are calculated using my real age. If the user were old enough to surpass the expected worldwide average life expectancy of a man (71 years), it would show '0' in the time remaining column, and would begin counting in the Years Surpassed._)
+_These examples are calculated using my real age. If the user were old enough to surpass the expected worldwide average life expectancy of a man (71 years), it would show '0' in the time remaining column, and would begin counting in the Years Surpassed._
 
 ## Directions for Installation
+
+* _You can find the Git Repository for this program at:_
+*
+* _In terminal, please use the command:_
+* git clone
+### Before starting to use this program, you will need to install all webpacks and dependencies listed in this git directory's package.json file (located here: ), including intializing Karma (in Terminal, navigate to project folder and use the command *karma init*)
+* _Once all packages and dependencies are installed, you may navigate to the project folder and use the command:_
+* npm run test
+* _to run the tests for the business code of this project._
 
 
 ## Technologies used
 
 * Atom
-* Javascript
+* Javascript (ES6)
 * Node.js
 * Jasmine
 * Karma
