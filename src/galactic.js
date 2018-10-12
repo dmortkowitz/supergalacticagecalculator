@@ -10,17 +10,22 @@ export class SolarAge {
 
   mercuryYears(age) {
     var mercuryYears = age / 0.24;
-    return Math.floor(mercuryYears);
+    return Math.round(mercuryYears);
   }
 
   venusYears(age) {
     var venusYears = age / 0.62;
-    return Math.floor(venusYears);
+    return Math.round(venusYears);
   }
 
   marsYears(age) {
     var marsYears = age / 1.88;
-    return Math.floor(marsYears);
+    return Math.round(marsYears);
+  }
+
+  jupiterYears(age) {
+    var jupiterYears = age / 11.86;
+    return Math.round(jupiterYears);
   }
 }
 
