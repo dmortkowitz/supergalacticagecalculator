@@ -3,12 +3,12 @@ export class SolarAge {
     this.age = age;
   }
 
-  function yearsSeconds(age) {
+  yearsSeconds(age) {
     var ageSeconds = age * 31536000;
     return ageSeconds;
   }
 
-  function mercuryYears(age) {
+  mercuryYears(age) {
     var mercuryYears = age / 0.24;
     return Math.floor(mercuryYears);
   }
