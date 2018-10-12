@@ -15,3 +15,10 @@ import { SolarAge, EarthAge } from './../src/galactic.js';
   expect(age.venusYears(33)).toEqual(53);
   });
 });
+
+  describe('SolarAge', function() {
+  it('shoud return age on Venus', function() {
+  let age = new SolarAge(33);
+  expect(age.marsYears(33)).toEqual(17);
+  });
+});

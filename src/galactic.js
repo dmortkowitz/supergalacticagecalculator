@@ -17,6 +17,11 @@ export class SolarAge {
     var venusYears = age / 0.62;
     return Math.floor(venusYears);
   }
+
+  marsYears(age) {
+    var marsYears = age / 1.88;
+    return Math.floor(marsYears);
+  }
 }
 
 
