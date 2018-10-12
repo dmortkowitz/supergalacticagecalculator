@@ -1,14 +1,33 @@
-export class Galactic {
-  constructor(solarYears)
-  this.solarYears = solarYears;
+export class SolarAge {
+  constructor(age) {
+    this.age = age;
+  }
+
+  function yearsSeconds(age) {
+    var ageSeconds = age * 31536000;
+    return ageSeconds;
+  }
+
+  function mercuryYears(age) {
+    var mercuryYears = age / 0.24;
+    return Math.floor(mercuryYears);
+  }
 }
 
-YearsSeconds(solarYears) {
-  let ageSeconds = age * 31536000;
-  return ageSeconds;
-}
 
-mercuryYears (solarYears) {
-  let mercuryYears = solarYears / 0.24;
-  return Math.floor(mercuryYears);
+export class EarthAge {
+  constructor(earthAge) {
+    this.earthAge = earthAge;
+  }
+  calcAge() {
+    let date = new Date();
+    let birthday = new Date(this.birthday);
+    let earthAge = date.getFullYear() - birthday.getFullYear();
+    let mon = date.getMonth() - birthday.getMonth();
+    if (mon < 0 || (mon === 0 && date.getDate() < birthday.getDate())) {
+      return "Invalid age.";
+    } else {
+    return earthAge;
+    }
+  }
 }
